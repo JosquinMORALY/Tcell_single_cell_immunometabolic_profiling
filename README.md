@@ -40,3 +40,6 @@ The pipeline includes:
 
 The included healthy-donor PBMC dataset is provided to demonstrate the analysis workflow and enable users to run the pipeline.
 
+## References
+
+PARC: Stassen SV, Siu DMD, Lee KCM, et al. PARC: ultrafast and accurate clustering of phenotypic data of millions of single cells. Bioinformatics. 2020;36(9):2778–2786. DOI: 10.1093/bioinformatics/btaa042.
