@@ -14,7 +14,7 @@ The approach uses short-pulse puromycin incorporation as a single-cell readout o
 
 ## Repository contents
 
-* [`data/`](data/) — example healthy-donor PBMC dataset provided to run the analysis pipeline.
+* [`data/`](data/) — example healthy-donor CD3+ T-cell dataset obtained from freshly isolated human PBMCs
 * [`code/`](code/) — Jupyter notebook for data processing, calculation of metabolic dependencies, PARC clustering, and UMAP visualization.
 
 ```text
