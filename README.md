@@ -10,7 +10,7 @@ Protein synthesis-based single-cell metabolic profiling of T cells using high-di
 
 This repository contains the analysis pipeline for protein synthesis-based single-cell immunometabolic profiling of T cells.
 
-The approach uses short-pulse puromycin incorporation as a single-cell readout of protein synthesis and high-dimensional flow cytometry to quantify metabolic activity and pathway dependencies across T-cell populations.
+The approach uses short-pulse puromycin incorporation as a single-cell readout of protein synthesis and metabolic dependencies. Cells are analyzed under four conditions: DMSO (vehicle control), OLIGO (oligomycin; ATP synthase inhibition), CHX (cycloheximide; protein synthesis inhibition), and NP (no puromycin control). Metabolic dependencies are calculated as described in the SCENITH framework by Argüello et al. [1]. High-dimensional flow cytometry enables these metabolic parameters to be resolved across phenotypically defined T-cell populations.
 
 ## Repository contents
 
@@ -32,7 +32,7 @@ The pipeline includes:
 
 1. Import and concatenation of FCS files and associated sample metadata.
 2. Transformation and normalization of flow cytometry marker intensities.
-3. High-dimensional clustering of T-cell populations using PARC based on phenotypic markers (puromycin excluded)
+3. High-dimensional clustering of T-cell populations using PARC [2], based on phenotypic markers and excluding puromycin from clustering.
 4. Calculation of protein synthesis and OXPHOS depedence from puromycin incorporation within each PARC-defined cluster
 6. UMAP visualization of PARC clusters and associated metabolic and phenotypic features.
 
@@ -42,4 +42,6 @@ The included healthy-donor PBMC dataset is provided to demonstrate the analysis 
 
 ## References
 
-PARC: Stassen SV, Siu DMD, Lee KCM, et al. PARC: ultrafast and accurate clustering of phenotypic data of millions of single cells. Bioinformatics. 2020;36(9):2778–2786. DOI: 10.1093/bioinformatics/btaa042.
+1. Argüello RJ, Combes AJ, Char R, et al. SCENITH: A Flow Cytometry-Based Method to Functionally Profile Energy Metabolism with Single-Cell Resolution. *Cell Metabolism*. 2020. DOI: 10.1016/j.cmet.2020.11.007.
+
+2. Stassen SV, Siu DMD, Lee KCM, et al. PARC: ultrafast and accurate clustering of phenotypic data of millions of single cells. *Bioinformatics*. 2020;36(9):2778–2786. DOI: 10.1093/bioinformatics/btaa042.
