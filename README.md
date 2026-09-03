@@ -32,9 +32,9 @@ The pipeline includes:
 
 1. Import and concatenation of FCS files and associated sample metadata.
 2. Transformation and normalization of flow cytometry marker intensities.
-3. Calculation of protein synthesis and metabolic pathway dependencies from puromycin incorporation.
-4. High-dimensional clustering of T-cell populations using PARC.
-5. UMAP visualization of PARC clusters and associated metabolic and phenotypic features.
+3. High-dimensional clustering of T-cell populations using PARC based on phenotypic markers (puromycin excluded)
+4. Calculation of protein synthesis and OXPHOS depedence from puromycin incorporation within each PARC-defined cluster
+6. UMAP visualization of PARC clusters and associated metabolic and phenotypic features.
 
 ## Example data
 
